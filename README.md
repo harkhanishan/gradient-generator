@@ -17,4 +17,4 @@ Choose degree value next:
 
 ![image](https://user-images.githubusercontent.com/103566086/167397802-c0f4b4ba-7ff9-4bb2-bacf-4cbdc3ac8d9c.png)
 
-And it will show you how that gradient will look like
+And it will show you how that gradient will look like and will also give you code for that gradient.
