@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>
+            Gradient generator
+        </title>
+        <link href="generator.css" type="text/css" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Create gradient on your own</h1>
+        
+        <div id="gradient"></div>
+        
+        <input type="color" name="color1" class="color1" value="#DE3163">
+        <input type="color" name="color2" class="color2" value="#000000">
+        <input type="number" name="degree" class="deg" placeholder="Enter value of degree" min="5" max="360" value="45">
+        
+        <h2>Code for generated gradient is:- </h2>
+        
+        <h4></h4>
+
+        <script src="utility.js"></script>
+        <script>
+            var c1= document.querySelector('.color1');
+            var c2= document.querySelector('.color2');
+            var a= document.querySelector('.deg');
+            var g= document.querySelector('#gradient');
+            var c= document.querySelector('h4');
+
+            function change()
+            {
+                g.style.background= 'linear-gradient(' + a.value + 'deg, ' + c1.value + ', ' + c2.value + ')';
+                c.textContent= g.style.background + ";";
+            }
+            addEvent(c1, 'input', change);
+            addEvent(c2, 'input', change);
+            addEvent(a, 'change', change);
+        </script>
+    </body>
+</html>
